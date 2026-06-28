@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-image: linear-gradient(220deg,#4a447d,#4c41ae,#404053);
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+  }
+}
+
+@layer components {
+  .calc {
+    @apply  flex flex-col items-center gap-4 w-full max-w-90 rounded-2xl mx-auto mt-4 pb-5 border-2 border-[#A855F7] bg-[linear-gradient(145deg,#F3E8FF,#E9D5FF)] shadow-[0_0_20px_#A855F733];
+  }
+
+  .input {
+    @apply w-11/12 h-16 rounded-2xl mt-4 text-3xl text-right px-4 outline-none font-[Orbitron,monospace] bg-white text-[#4a1772] border-[1.5px] border-[#A855F7] shadow-[0_0_8px_#A855F744];
+  }
+
+  .numGrid {
+    @apply grid grid-cols-4 gap-3 w-11/12;
+  }
+
+  .numbers {
+    @apply h-12 flex justify-center items-center cursor-pointer rounded-full text-xl font-[Orbitron,monospace] bg-[#FAF5FF] border-[1.5px] border-[#E9D5FF] text-[#4a1772] transition-all duration-150 hover:bg-[#F3E8FF] hover:shadow-[0_0_14px_#A855F788];
+  }
+
+  .ac {
+    @apply bg-[#A855F7] text-white border-[#A855F7] hover:bg-[#9333EA] hover:shadow-[0_0_14px_#A855F788];
+  }
+
+  .zero {
+    @apply col-span-2;
+  }
+
+  .mathSign {
+    @apply h-12 flex justify-center items-center cursor-pointer rounded-full text-2xl text-white font-[Orbitron,monospace] bg-[linear-gradient(135deg,#7B1FA2,#A855F7)] border-[1.5px] border-[#E9D5FF] shadow-[0_0_10px_#7B1FA266] transition-all duration-150 hover:bg-[linear-gradient(135deg,#A855F7,#F472B6)] hover:shadow-[0_0_18px_#A855F7,0_0_36px_#7B1FA255];
+  }
+
+  .equal {
+    @apply h-12 flex justify-center items-center rounded-full cursor-pointer text-3xl text-white font-[Orbitron,monospace] bg-[linear-gradient(135deg,#4a1772,#7B1FA2)] border-[1.5px] border-[#E9D5FF] shadow-[0_0_12px_#7B1FA266] transition-all duration-150 hover:bg-[linear-gradient(135deg,#7B1FA2,#A855F7)] hover:shadow-[0_0_22px_#A855F777];
+  }
+
+  .result {
+    @apply w-11/12 h-16 rounded-2xl flex justify-center items-center text-3xl mb-0 font-[Orbitron,monospace] bg-white text-[#7B1FA2] border-2 border-[#A855F7] shadow-[0_0_10px_#A855F744] [text-shadow:0_0_8px_#A855F7];
+  }
+  
+  .footer{
+    @apply min-h-[40vh] py-10 flex flex-col items-center gap-6 border border-fuchsia-500 rounded-[30px] w-11/12 lg:w-5/12 xl:w-3/12
+  }
+
+  .icon{
+    @apply w-15 h-15 rounded-full border border-fuchsia-500 flex items-center justify-center text-fuchsia-300 text-3xl no-underline transition-all duration-200 hover:border-purple-500 hover:text-purple-500
+  }
+}
+  
+
+@keyframes blobBg {
+  0%   { border-radius: 60% 40% 55% 45% / 70% 30% 70% 30%; }
+  33%  { border-radius: 40% 60% 45% 55% / 30% 70% 30% 70%; }
+  66%  { border-radius: 55% 45% 60% 40% / 50% 50% 40% 60%; }
+  100% { border-radius: 60% 40% 55% 45% / 70% 30% 70% 30%; }
+}
+
+@keyframes blobImg {
+  0%   { border-radius: 56% 44% 55% 45% / 79% 14% 86% 21%; }
+  33%  { border-radius: 44% 56% 45% 55% / 21% 86% 14% 79%; }
+  66%  { border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%; }
+  100% { border-radius: 56% 44% 55% 45% / 79% 14% 86% 21%; }
+}
+
+.blob-bg {
+  animation: blobBg 6s ease-in-out infinite;
+}
+
+.blob-img {
+  animation: blobImg 6s ease-in-out infinite;
+}
+
+
+
+
+/* npx @tailwindcss/cli -i ./src/assets/stylesheet/main.css -o ./src/assets/stylesheet/output.css --watch */
+

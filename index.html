@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="assets/stylesheet/output.css" />
+    <link rel="stylesheet" href="assets/icon/remixicon.css">
+  </head>
+  <body>
+    <div class="min-h-screen flex items-center">
+    <div class="calc">
+    <input type="text" class="input" />
+    <div class="numGrid">
+      <div class="numbers ac" onclick="clearAll()">AC</div>
+      <div class="numbers" onclick="toggleSign()">+/-</div>
+      <div class="numbers" onclick="percent()">%</div>
+      <div class="mathSign" onclick="op('/')">÷</div>
+
+      <div class="numbers" onclick="para(event)">7</div>
+      <div class="numbers" onclick="para(event)">8</div>
+      <div class="numbers" onclick="para(event)">9</div>
+      <div class="mathSign" onclick="op('*')">×</div>
+
+      <div class="numbers" onclick="para(event)">4</div>
+      <div class="numbers" onclick="para(event)">5</div>
+      <div class="numbers" onclick="para(event)">6</div>
+      <div class="mathSign" onclick="op('-')">−</div>
+
+      <div class="numbers" onclick="para(event)">1</div>
+      <div class="numbers" onclick="para(event)">2</div>
+      <div class="numbers" onclick="para(event)">3</div>
+      <div class="mathSign" onclick="op('+')">+</div>
+
+      <div class="numbers zero" onclick="para(event)">0</div>
+      <div class="numbers" onclick="para(event)">.</div>
+      <div class="equal" onclick="Equal()">=</div>
+    </div>
+    <h2 class="result"></h2>
+  </div>
+    </div>
+  <!-- footer////////////// -->
+   <footer class="footer">
+  <!-- بک‌گراند پشت عکس -->
+  <div class="relative flex items-center justify-center">
+    <!-- لایه پشتی (بزرگ‌تر) -->
+    <div class="blob-bg absolute w-72 h-72" style="background: linear-gradient(135deg, #a855f7, #ec4899); opacity: 0.35;">
+    </div>
+    <!-- عکس اصلی (کوچک‌تر) -->
+    <figure class="blob-img relative w-60 h-60 overflow-hidden z-10 bg-[#A855F7]" >
+      <img src="assets/Img/photo_2026-02-20_17-59-51 (2).jpg" alt="" class="w-full h-full object-cover">
+    </figure>
+  </div>
+
+  <!-- اسم و تایتل -->
+  <div class="text-center">
+    <p class="text-white text-2xl font-medium m-0">Behrokh Naderi</p>
+    <p class="text-fuchsia-300 text-2xl m-0">Frontend Developer</p>
+  </div>
+
+  <!-- آیکون‌های سوشال -->
+  <div class="flex gap-4">
+    <a href="https://www.instagram.com/behrokh_dev" target="_blank"
+       class="icon">
+      <i class="ri-instagram-line"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/behrokh-naderi/" target="_blank"
+       class="icon">
+      <i class="ri-linkedin-box-fill"></i>
+    </a>
+    <a href="https://github.com/behrokh-dev" target="_blank"
+       class="icon">
+      <i class="ri-github-fill"></i>
+    </a>
+    <a href="mailto:naderibehrokh@gmail.com"
+       class="icon">
+      <i class="ri-google-fill"></i>
+    </a>
+  </div>
+
+  <p class="text-fuchsia-300 text-[11px]">© 2026 Behrokh-dev</p>
+
+</footer>
+<!-- footer///////////// -->
+   <script src="assets/javascript/master.js"></script>
+</body>
+</html>
