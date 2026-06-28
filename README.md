@@ -11,9 +11,9 @@ https://behrokh-dev.github.io/calculator-/
 ---
 
 ## 📸 Screenshot
-<img width="1901" height="869" alt="Image" src="https://github.com/user-attachments/assets/19e9a7c4-12fa-43e2-aa24-24bb23a41b0e" />
+<img width="1920" height="869" alt="Image" src="https://github.com/user-attachments/assets/1abd4e83-d4f1-40c2-bb51-ff6736095ef9" />
 
-<img width="1901" height="814" alt="Image" src="https://github.com/user-attachments/assets/62c99f4f-5595-4ab8-aa33-e77aeaff9b7a" />
+
 
 ---
 
